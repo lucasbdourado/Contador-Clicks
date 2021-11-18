@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaf8ff;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+p, span{
+    font-size: 1.6rem;
+}
+
+button{
+    background-color: #eff8fd;
+    border: 0.1rem solid #0f2152;
+    color: #0f2152;
+    padding: 1.5rem 3.0rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    transition: ease-out 0.3s;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 3rem auto;
+}
+
+button:hover{
+    background-color: #66c9ff;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        font-family: 'Poppins', sans-serif;
+        display: grid;
+        grid-template-columns: 3,1fr;
+    }
+    
+    header{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    button{
+        margin: 0 auto;
+    }
+    
+}
